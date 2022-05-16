@@ -3,7 +3,10 @@ const add = (a: number, b: number): number => {
   return a + b;
 };
 
-const pick = function (params: Params, keys: KeyTypes) {
+const pick = function <T extends Record<any, any>>(
+  params: Params,
+  keys: KeyTypes
+) {
   if (Array.isArray(keys)) {
     // return keys.map((key) => {
     //   return { [key]: params[key] };

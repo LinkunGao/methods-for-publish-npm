@@ -90,6 +90,7 @@
 
   ```bash
       npm adduser / npm login
+      npm publish
   ```
 
 - Version

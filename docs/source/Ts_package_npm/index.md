@@ -96,7 +96,8 @@
 - Version
   use `Semantic version`
 
-  1.2.3
+  version: 1.2.3
+
   1: major, when you make a big change
   2: minor, when you add new functions
   3: patch, when you fix something

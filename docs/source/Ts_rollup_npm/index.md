@@ -112,6 +112,7 @@ export default {
 ```
 
 `main` is for `import`
+
 `moudle` is for `require`
 
 - In html script
@@ -129,7 +130,7 @@ export default {
 
 ## test js online
 
-https://jsbin.com/?html,output
+[jsbin](https://jsbin.com/?html,output)
 
 ## Upload steps
 

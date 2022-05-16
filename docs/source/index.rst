@@ -11,12 +11,9 @@ Welcome to npm publish's documentation!
    :caption: Contents:
 
    Vue_package_npm/index
+   Ts_package_npm/index
+   Ts_rollup_npm/index
    thanks
 
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

@@ -45,9 +45,9 @@
 
           /* Language and Environment */
           "target": "es5" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
-          "lib": [
-          "DOM"
-          ],
+          //"lib": [
+          //"DOM"
+          //],
           /* Modules */
           "module": "commonjs" /* Specify what module code is generated. */,
           "rootDir": "./src" /* Specify the root folder within your source files. */,
@@ -71,6 +71,16 @@
       }
   }
 
+  ```
+
+  **`Notice`**
+
+  If we want use `lib`, we must add the relative target nodejs
+
+  ```json
+  {
+    "lib": ["DOM", "ES2015.Core", "ES2015"]
+  }
   ```
 
 - create src and dist folder under root.

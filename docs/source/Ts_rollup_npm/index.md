@@ -186,7 +186,7 @@ Also in `index.d.ts`, we need to declare file. such as
 
 ```ts
 declare module "*.svg";
-declare module "*.hrd";
+declare module "*.hdr";
 ```
 
 ## test js online

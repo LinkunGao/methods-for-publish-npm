@@ -37,6 +37,8 @@
   }
   ```
 
+  The `types` here is same as `typings`.
+
 - Config tsconfig.json
 
   ```ts

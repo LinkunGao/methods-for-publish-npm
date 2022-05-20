@@ -128,6 +128,67 @@ export default {
 </body>
 ```
 
+## Rollup package .glsl/.vs/.fs/.vert/.fragment file
+
+```bash
+  npm i rollup-plugin-glslify --save-dev
+```
+
+In rollup.config.js, more see (https://blog.meglody.com/diary/%E4%BD%BF%E7%94%A8TypeScript%E5%BC%80%E5%8F%91WebGL%EF%BC%88%E4%B8%80%EF%BC%89%E4%BD%BF%E7%94%A8%E7%9D%80%E8%89%B2%E5%99%A8/)
+
+```js
+import glslify from "rollup-plugin-glslify";
+export default {
+  plugins: [typescript(), terser(), glslify()],
+};
+```
+
+In root folder, create a `index.d.ts` file.
+
+```ts
+declare module "*.vert";
+declare module "*.frag";
+declare module "*.vs";
+declare module "*.fs";
+declare module "*.glsl";
+```
+
+## Rollup url loader
+
+```bash
+npm i @rollup/plugin-url -D
+```
+
+In rollup.config.js, more see (https://www.npmjs.com/package/@rollup/plugin-url)
+
+```js
+import url from "@rollup/plugin-url";
+
+export default {
+  input: "src/index.js",
+  output: {
+    dir: "output",
+    format: "cjs",
+  },
+  plugins: [url()],
+};
+```
+
+In ts we can do
+
+```ts
+// src/index.js
+import svg from "./image.svg";
+console.log(`svg contents: ${svg}`);
+```
+
+Also in `index.d.ts`, we need to declare file. such as
+
+```ts
+declare module "*.svg";
+declare module "*.hrd";
+```
+
 ## test js online
 
 [jsbin](https://jsbin.com/?html,output)

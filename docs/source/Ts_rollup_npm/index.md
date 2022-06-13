@@ -308,3 +308,22 @@ export default outputMap.map((output) => {
 ```
 
 recommand use `npm run build` to package.
+
+- load css
+
+```bash
+npm i rollup-plugin-postcss postcss --D
+```
+
+- In rollup.config.js
+
+```js
+  import postcss from 'rollup-plugin-postcss'
+  export default {
+    input: ...,
+    output: ...,
+    plugins:[
+      postcss()
+    ]
+  }
+```
